@@ -1,6 +1,5 @@
 "use strict"
-window.addEventListener("load", function(){
-    
+window.addEventListener("load", function(){    
     var imagenes =[
         "https://im.cyberport.de/is/image/cyberport/220802155757000301900014U?$Zoom_2000$",
         "https://im.cyberport.de/is/image/cyberport/220802155757900301900012Z?$Zoom_1000$",
@@ -15,21 +14,21 @@ window.addEventListener("load", function(){
     var left = document.querySelector("#left");
     var right = document.querySelector("#right");
     left.addEventListener("click",function(){
-        if(i=0){
+        i--;
+        if(i<=0){
             i=0;
-        }else{
+        }
+        if(i!=0){
             imagen.src =imagenes[i-1];
-            i--; 
         }
     });
     right.addEventListener("click",function(){
-        if(i=5){
+        i++;
+        if(i>=5){
             i=5;
-        }else{
-            imagen.src =imagenes[i+1];
-            i++; 
         }
-              
-    });
-    
+        if(i!=5){
+            imagen.src =imagenes[i+1];
+        }              
+    });    
 });
