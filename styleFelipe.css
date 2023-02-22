@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.068),rgb(124, 124, 124));
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading h1{
+    font-size: 2rem;
+    color:black;
+    font-weight: 500px;
+}
+.blog1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px; 
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 350px;
+    background-color: #fff;
+    border: 1.5px solid black;
+    margin: 20px;
+}
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.playoffs{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.playoffs span{
+    color: rgb(84, 84, 84);
+    font-size: 1.2rem;
+}
+.playoffs .blog-title{
+     font-size: 1.2rem;
+     font-weight: 750;
+     color: black;
+     text-align: center;
+}
+.blog-title:hover{
+    color: aquamarine;
+    transition: all 0.25s;
+}
+.summary{
+    color: grey;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.full{
+    color: grey;
+    font-size: 1.2rem;
+}
+.playoffs a{
+    color: black;
+}
+details summary::after {
+    content: "Leer mas..."
+}
+
+details[open] summary::after {
+    content: "Leer menos..."
+}
+summary:hover{
+    color: aquamarine;
+    transition: all 0.25s;
+}
+
+footer{
+    font-size: small;
+    text-align: center;
+    color: #fff;
+}
