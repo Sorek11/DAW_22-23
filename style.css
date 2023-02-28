@@ -31,5 +31,8 @@ img:hover{
     transition: transform 1000ms;
   }
 
-
+a {
+    color:rgb(31, 31, 31);
+    text-decoration: none;
+  }
 
